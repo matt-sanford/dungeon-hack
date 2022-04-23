@@ -1,13 +1,17 @@
 <template>
   <div class="home">
-    <h1>Battlemat</h1>
+    <battlemat />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import battlemat from '@/components/battlemat.vue';
 
 export default defineComponent({
   name: 'Home',
+  components: {
+    battlemat,
+  },
 });
 </script>
